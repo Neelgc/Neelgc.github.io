@@ -788,7 +788,7 @@
       -->
       <div class="card">
         <div class="card-media">
-          <!-- OPTION A : IMAGE -->
+          <!-- Carte 1 -->
           <img src="ProjectAI.png" alt="Projet 1"
                onerror="this.parentElement.innerHTML='<div class=\'card-media-placeholder\'>🎮</div>'" />
           <div class="card-media-overlay"></div>
@@ -821,37 +821,35 @@
         ║  → Remplace src="..." par ta vidéo   ║
         ╚══════════════════════════════════════╝
       -->
+      <!-- Carte 2 -->
       <div class="card">
-        <div class="card-media">
-          <!-- OPTION B : VIDÉO -->
-          <video
-            src="ProjetMoteur.mp4"
-            muted loop playsinline
-            onmouseenter="this.play()"
-            onmouseleave="this.pause(); this.currentTime=0;"
-          ></video>
+        <div class="card-media"
+          onmouseenter="this.querySelector('video').play()"
+          onmouseleave="let v=this.querySelector('video'); v.pause(); v.currentTime=0;">
+
+          <video src="ProjetMoteur.mp4" muted loop playsinline></video>
           <div class="play-icon">▶</div>
           <div class="card-media-overlay"></div>
           <span class="card-num">002</span>
         </div>
         <div class="card-body">
           <div class="card-meta">
-            <span class="card-type perso">Bachelor</span>
+            <span class="card-type">Bachelor</span>
             <span class="card-year">2025</span>
+        </div>
+        <h3 class="card-title">Moteur DX12</h3>
+        <p class="card-desc">
+          Réalisation d'un moteur custom via DirectX12 en 2 semaines
+        </p>
+        <div class="card-footer">
+          <div class="card-techs">
+            <span class="tech">DirectX12</span>
+            <span class="tech">C++</span>
           </div>
-          <h3 class="card-title">Moteur DX12</h3>
-          <p class="card-desc">
-            Réalisation d'un moteur custom via DirectX12 en 2 semaines
-          </p>
-          <div class="card-footer">
-            <div class="card-techs">
-              <span class="tech">DirectX12</span>
-              <span class="tech">C++</span>
-            </div>
-            <a href="#" class="card-link">Voir</a>
-          </div>
+          <a href="#" class="card-link">Voir</a>
         </div>
       </div>
+    </div>
 
       <!-- Carte 3 -->
       <!-- Carrouseel d'image-->
